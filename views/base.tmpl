@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no, width=device-width" name="viewport">
+    <title>Thana Showtimes</title>
+    <link href="/static/css/base.min.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/base.min.js"></script>
+    <script src="/static/js/app.js"></script>
+  </head>
+  <body class="page-brand" style="background: #eeeeee;">
+
+  <header class="header header-brand header-standard header-waterfall" style="padding-left: 20px;">
+    <a class="header-logo header-affix-hide margin-left-no margin-right-no" href="#">Thana Showtimes</a>
+    <ul class="nav nav-list pull-right">
+      <li class="dropdown margin-right">
+        <a id="app-home" class="padding-left-no padding-right-no" href="#" onclick="return home()">
+          <span class="icon icon-2x">home</span>
+        </a>
+      </li>
+    </ul>
+  </header>
+
+  <div style="margin-bottom: 55px;"></div>
+
+  <div class="progress">
+      <div class="load-bar">
+          <div class="load-bar-base">
+              <div class="load-bar-content">
+                  <div class="load-bar-progress"></div>
+                  <div class="load-bar-progress load-bar-progress-brand"></div>
+                  <div class="load-bar-progress load-bar-progress-green"></div>
+                  <div class="load-bar-progress load-bar-progress-orange"></div>
+              </div>
+          </div>
+      </div>
+      <div class="load-bar">
+          <div class="load-bar-base">
+              <div class="load-bar-content">
+                  <div class="load-bar-progress"></div>
+                  <div class="load-bar-progress load-bar-progress-orange"></div>
+                  <div class="load-bar-progress load-bar-progress-green"></div>
+                  <div class="load-bar-progress load-bar-progress-brand"></div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="container" style="margin-top: 0px;">
+    {{template "content" .}}
+  </div>
+
+  </body>
+</html>
+
